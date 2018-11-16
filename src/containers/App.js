@@ -20,10 +20,10 @@ class App extends Component {
             <div>
                 <Row>
                     <Col span={12}>
-                        <ProsConsTable name={`Pro's`} data={this.props.pros} onUpdate={this.props.onUpdatePros}/>
+                        <ProsConsTable name={`Pro's`} data={this.props.pros ? this.props.pros : []} onUpdate={this.props.onUpdatePros}/>
                     </Col>
                     <Col span={12}>
-                        <ProsConsTable name={`Con's`} data={this.props.cons} onUpdate={this.props.onUpdateCons}/>
+                        <ProsConsTable name={`Con's`} data={this.props.cons ? this.props.cons : []} onUpdate={this.props.onUpdateCons}/>
                     </Col>
                 </Row>
             </div>

@@ -55,7 +55,7 @@ export default class ProsConsTable extends React.Component {
     };
 
     render() {
-        const {data} = this.props,
+        const data = this.props.data ? this.props.data : [],
             tableData = data.map((item, index) => {
                 return {
                     key: index,
